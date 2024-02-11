@@ -1,0 +1,45 @@
+[Developers]
+1. Redpiar
+	- Role: Lead Developer
+	- Contact Information: (redpiar.official@gmail.com)
+	- GitHub: (https://github.com/RedPiarOfficial)
+	- Telegram: (@Redpiar)
+
+
+[Russian]
+я подписал две папки как "ungroup to Packages}}}User" и "ungroup to Sublime Text3"
+ungroup to Sublime Text3 - нужно разгрупировать(скинуть папку backup) в ту папку где лежит у вас sublime_text.exe. после вам нужно рагрупировать "ungroup to Packages}}}User" в корневую папку пользователя из Sublime Text, есть два способа найти эту папку:
+
+1. попробовать воспользоваться стандартным путем:
+C:\Users\User\AppData\Roaming\Sublime Text 3\Packages\User
+
+2. а так же можно:
+	* запускаем Sublime Text.exe
+	* ищем Tools>Developer>New plugin...
+	* потом нажимаем комбинацию ctrl+S
+	* у нас открывается окно сохранение, там можно взять точный путь к .\Packages\User
+	* после кидаем туда наш файл backup_copy.py из папки "ungroup to Packages}}}User"
+	* Перезапускаем Sublime Text.exe
+
+Готово! теперь при комбинации Ctrl+S в любом файле резервные копии будут создаваться в папке backup
+(в backupSettings.ini есть пункт ignored - там находятся те файлы которым отключаем резервное копирование)
+
+[English]
+I have labeled two folders as "ungroup to Packages}}}User" and "ungroup to Sublime Text3."
+
+For "ungroup to Sublime Text3," you need to ungroup it (remove the backup folder) into the folder where your sublime_text.exe is located. After that, you need to group "ungroup to Packages}}}User" into the root user folder in Sublime Text. There are two ways to find this folder:
+
+Try using the standard path:
+C:\Users\User\AppData\Roaming\Sublime Text 3\Packages\User
+
+Alternatively:
+
+	* Launch Sublime Text.exe.
+	* Navigate to Tools > Developer > New plugin...
+	* Press the Ctrl+S key combination.
+	* In the Save window, you can obtain the exact path to .Packages\User.
+	* Copy the path and paste the backup_copy.py file from the "ungroup to Packages}}}User"
+	* folder into that location.
+	* Restart Sublime Text.exe.
+
+Done! Now, when you use the Ctrl+S combination in any file, backup copies will be created in the backup folder (in backupSettings.ini, there is an "ignored" section containing files for which backup is disabled).
